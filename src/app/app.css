@@ -1,0 +1,7 @@
+@font-face {
+    font-family: Simonetta;
+    src: url(../fonts/Simonetta-Regular.ttf) format("truetype");
+    src: url(../fonts/Simonetta-Italic.ttf) format("truetype");
+    src: url(../fonts/Simonetta-Black.ttf) format("truetype");
+    src: url(../fonts/Simonetta-BlackItalic.ttf) format("truetype");
+}
