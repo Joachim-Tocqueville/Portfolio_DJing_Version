@@ -1,0 +1,21 @@
+<div 
+  (mousemove)="onMouseMove($event)" 
+  (mouseup)="stopResize()" 
+  (mouseleave)="stopResize()"
+  class="relative">
+  
+  <section 
+    [style.height.px]="sectionHeight" 
+    class="bg-gray-100 border-2 border-gray-300 relative">
+    Contenu de ma section
+  </section>
+  
+  <!-- Poignée externe (plus visible) -->
+  <div 
+    (mousedown)="startResize($event)"
+    class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-4 bg-indigo-500 hover:bg-indigo-600 rounded-full cursor-ns-resize flex items-center justify-center shadow-lg">
+    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M5 8l5 5 5-5H5z"/>
+    </svg>
+  </div>
+</div>

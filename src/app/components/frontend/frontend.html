@@ -1,85 +1,129 @@
 <section class="container-fluid bg-[#1E1E1E]">
   <app-header></app-header>
-  <div class="text-white text-center h-50">
-    <p class="text-[1.5rem] font-[Simonetta-Regular]">Salut, je suis Joachim Tocqueville !</p>
-    <p class="mx-100 pt-5 text-[1.2rem] font-[Simonetta-Italic]">Je suis étudiant en BUT MMI à l'université Gustave Eiffel, à Meaux. Je suis passionnée par la musique et la programmation, je cherche sans arrêt à développer mes compétences. Sur ce site, vous trouverez un aperçu des différents projets que j'ai pu réalisé durant ma 1ère année, ainsi que des projets personnels.</p>
+  <div class="text-white text-center h-150">
+    <p class="text-[1.5rem] font-[Simonetta-Regular]">Tech my bro</p>
+    <div class="mx-100 pt-5 text-[1.2rem] font-[Simonetta-Italic] absolute">
+      <p>
+        Voici un de mes projets personels, il consistait en la création d'une cover pour la musique "Tech my bro" de Spadrag.
+        Pour cela, il fallu imaginer un design qui allait bien avec la DA de la musique ainsi que celle de l'artiste.
+        J'avais tout de suite pensé à un design futuriste avec une tête de robot car c'est un son techno. Le choix des couleurs fut assez simple.
+        Les polices ont été réfléchis juste après mais cette réflexion a pris un peu de temps. Et enfin j'ai cherché un fond sympa tout en restant dans la même DA.
+      </p>
+      <p>
+        Ensuite, j'ai utilisé Photoshop pour assembler et modifier les différents éléments, notamment la tête de robot.
+      </p>
+      <p>
+        Ce projet a débuté le 13/09/2026 et a duré 10 jours.
+      </p>
+      <p>
+        Durant l'élaboration de cette cover, j'ai eu du mal à trouver la bonne tête, un bon fond et des polices qui correspondaient au thème.
+        Le problème principal était que je prenais du temps à trouver des éléments qui étaient adaptés et intéressants.
+        Enfin, j'ai partagé cette cover à Spadrag et il en était fier, tout comme moi.
+      </p>
+    </div>
+    <img src="../../../imgs/Tech_my_bro.webp" alt="Image de 'Tech my bro'" class="bg-[#D9D9D9] h-80 w-60 ml-300 mt-5 text-center text-[#818181] font-[Simonetta-Regular] content-center absolute">
   </div>
   <div class="flex">
     <app-menu></app-menu>
+    <!-- Dégradé bord haut -->
     <div class="ml-70 w-[61.05rem] h-[2px] bg-linear-to-r from-[#000000] from-48% to-[#D9D9D9] to-53% absolute z-1"></div>
-    <div class="bg-[#292929] h-115 w-101 pt-8 text-center">
-        <span class="text-[1.5rem] text-white font-[Simonetta-Regular] ml-9">Titre</span>
-        <img src="" alt="" class="bg-[#D9D9D9] h-24 w-24 rounded-full text-center pt-4 pl-4 mt-18.5 ml-43.5 absolute z-2">
-        <div class="absolute ml-[7.6rem] mt-[1.3rem] z-1">
+    <!-- Projet 1 -->
+    <div class="bg-[#292929] h-115 w-101 pt-5 text-center">
+        <span class="text-[2rem] text-white font-[Simonetta-Regular] ml-9">Tech my bro</span>
+        <!-- Jogwheel avec img projet 1-->
+        <img src="../../../imgs/Tech_my_bro.webp" alt="Image de 'Tech my bro'" class="bg-[#D9D9D9] h-24 w-24 rounded-full text-center text-[#818181] font-[Simonetta-Regular] pt-5.5 pl-1 mt-16.5 ml-43.5 absolute z-2">
+        <div class="absolute ml-[7.6rem] mt-[0.8rem] z-1">
           <svg class="fill-[#2C2C2C] stroke-black stroke-4 h-48">
             <circle cx="100" cy="100" r="80"/>
           </svg>
         </div>
+        <!-- Bouton play -->
         <div class="absolute ml-8 mt-65 z-1">
           <svg class="fill-[#111111] h-20 absolute">
             <circle cx="40" cy="40" r="32.5"/>
           </svg>
           <a class="ml-8 mt-[1.4rem] border-t-18 border-t-transparent border-l-25 border-l-[#51F076] border-b-18 border-b-transparent absolute" routerLink=""></a>
         </div>
+        <!-- Hot cues -->
         <div class="ml-9">
-          <svg class="mt-59 ml-[7.6rem] h-16 w-16 stroke-2 absolute">
-            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+          <svg class="mt-59 ml-[7.6rem] h-16 w-16 absolute">
+            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
             <text x="21" y="44" font-size="30" fill="white">C</text>
           </svg>
-          <svg class="mt-59 ml-[11.8rem] h-16 w-16 stroke-2 absolute">
-            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+          <svg class="mt-59 ml-[11.8rem] h-16 w-16 absolute">
+            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
             <text x="16" y="43" font-size="30" fill="white">Lo</text>
           </svg>
-          <svg class="mt-76 ml-[7.6rem] h-16 w-16 stroke-2 absolute">
-            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+          <svg class="mt-76 ml-[7.6rem] h-16 w-16 absolute">
+            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
             <text x="16" y="43" font-size="30" fill="white">La</text>
           </svg>
-          <svg class="mt-76 ml-[11.8rem] h-16 w-16 stroke-2 absolute">
-            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+          <svg class="mt-76 ml-[11.8rem] h-16 w-16 absolute">
+            <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
             <text x="21" y="44" font-size="30" fill="white">D</text>
           </svg>
         </div>
     </div>
-    <hr class="h-105 border-l-3 border-[#151515]">
+    <hr class="h-115 border-l-3 border-[#151515]">
     <div>
-        <div class="bg-[#292929] h-115 w-41 text-center text-[1.2rem] text-white pt-8 font-[Simonetta-Regular]">
-            <span>Projets Front-end</span>
+        <div class="bg-[#292929] h-115 w-41 text-center text-[1.4rem] text-white pt-5 font-[Simonetta-Regular]">
+            <p>Projets</p>
+            <span>Front-end</span>
+            <!-- Crossfader -->
+            <hr class="mt-66 h-12 ml-[1.85rem] border-l-3 border-[#B1B1B1] absolute z-0">
+            <hr class="mt-66 h-12 ml-[4.9rem] border-l-3 border-[#DCDCDC] absolute z-0">
+            <svg class="mt-[16.45rem] h-16 w-41 absolute">
+              <rect x="74.5" y="5" width="10" height="40" stroke="#000000" stroke-width="2"/>
+              <rect x="77" y="5" width="5" height="40" fill="#DBDBDB" stroke="#000000" stroke-width="2"/>
+            </svg>
+            <hr class="mt-66 h-12 ml-32 border-l-3 border-[#B1B1B1] absolute z-0">
+            <hr class="mt-70 h-7 w-28 ml-6 border-t-15 border-[#0C0C0C] relative">
+            <div class="ml-5.5 absolute z-5 text-[2.5rem]">
+              <span class="">1</span>
+              <span class="mb-1 ml-8 text-[1.7rem] align-text-bottom">2</span>
+              <span class="ml-8">5</span>
+            </div>
         </div>
     </div>
-    <hr class="h-105 border-l-3 border-[#151515]">
-    <div class="bg-[#292929] h-115 w-101 pt-8 text-center">
-      <span class="text-[1.5rem] text-white font-[Simonetta-Regular] ml-9">Titre</span>
-      <img src="" alt="" class="bg-[#D9D9D9] h-24 w-24 rounded-full text-center pt-4 pl-4 mt-18.5 ml-43.5 absolute z-2">
-      <div class="absolute ml-[7.6rem] mt-[1.3rem] z-1">
+    <hr class="h-115 border-l-3 border-[#151515]">
+    <!-- Projet 2 -->
+    <div class="bg-[#292929] h-115 w-101 pt-5 text-center">
+      <span class="text-[2rem] text-white font-[Simonetta-Regular] ml-9">Projet 2</span>
+      <!-- Jogwheel avec img projet 2-->      
+      <img src="" alt="Image du projet 2" class="bg-[#D9D9D9] h-24 w-24 rounded-full text-center text-[#818181] font-[Simonetta-Regular] pt-5.5 pl-1 mt-16.5 ml-43.5 absolute z-2">
+      <div class="absolute ml-[7.6rem] mt-[0.8rem] z-1">
         <svg class="fill-[#2C2C2C] stroke-black stroke-4 h-48">
           <circle cx="100" cy="100" r="80"/>
         </svg>
       </div>
+      <!-- Bouton play -->
       <div class="absolute ml-8 mt-65 z-1">
         <svg class="fill-[#111111] h-20 absolute">
           <circle cx="40" cy="40" r="32.5"/>
         </svg>
         <a class="ml-8 mt-[1.4rem] border-t-18 border-t-transparent border-l-25 border-l-[#51F076] border-b-18 border-b-transparent absolute" routerLink=""></a>
       </div>
+      <!-- Hot cues -->
       <div class="ml-9">
-        <svg class="mt-59 ml-[7.6rem] h-16 w-16 stroke-2 absolute">
-          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+        <svg class="mt-59 ml-[7.6rem] h-16 w-16 absolute">
+          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
           <text x="21" y="44" font-size="30" fill="white">C</text>
         </svg>
-        <svg class="mt-59 ml-[11.8rem] h-16 w-16 stroke-2 absolute">
-          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+        <svg class="mt-59 ml-[11.8rem] h-16 w-16 absolute">
+          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
           <text x="16" y="43" font-size="30" fill="white">Lo</text>
         </svg>
-        <svg class="mt-76 ml-[7.6rem] h-16 w-16 stroke-2 absolute">
-          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+        <svg class="mt-76 ml-[7.6rem] h-16 w-16 absolute">
+          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
           <text x="16" y="43" font-size="30" fill="white">La</text>
         </svg>
-        <svg class="mt-76 ml-[11.8rem] h-16 w-16 stroke-2 absolute">
-          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43"/>
+        <svg class="mt-76 ml-[11.8rem] h-16 w-16 absolute">
+          <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
           <text x="21" y="44" font-size="30" fill="white">D</text>
         </svg>
       </div>
     </div>
+    <!-- Dégradé bord bas -->
     <div class="ml-70 mt-[28.6rem] w-[61.05rem] h-[2px] bg-linear-to-r from-[#000000] from-48% to-[#D9D9D9] to-53% absolute z-2"></div>
     <app-formcontact></app-formcontact>
   </div>
