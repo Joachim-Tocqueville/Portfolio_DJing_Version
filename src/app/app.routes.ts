@@ -7,11 +7,12 @@ import { Apropos } from './components/apropos/apropos';
 import { Accueil } from './components/accueil/accueil';
 
 export const routes: Routes = [
+    { path:'', component:Accueil},
+    { path:'app-accueil', component:Accueil},
     {path:'app', component:App},
     {path:'app-frontend', component:Frontend},
     {path:'app-backend', component:Backend},
     {path:'app-design', component:Design},
     {path:'app-apropos', component:Apropos},
-    {path:'**', redirectTo: 'accueil', pathMatch:'full'},
-    {path:'**', component:Accueil},
+    {path:'**', redirectTo: 'app-accueil', pathMatch:'full'},
 ];
