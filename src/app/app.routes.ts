@@ -4,6 +4,7 @@ import { Frontend } from './components/frontend/frontend';
 import { Backend } from './components/backend/backend';
 import { Design } from './components/design/design';
 import { Apropos } from './components/apropos/apropos';
+import { Accueil } from './components/accueil/accueil';
 
 export const routes: Routes = [
     {path:'app', component:App},
@@ -11,6 +12,6 @@ export const routes: Routes = [
     {path:'app-backend', component:Backend},
     {path:'app-design', component:Design},
     {path:'app-apropos', component:Apropos},
-    {path:'**', redirectTo:'app', pathMatch:'full'},
-    {path:'**', component:App},
+    {path:'**', redirectTo: 'accueil', pathMatch:'full'},
+    {path:'**', component:Accueil},
 ];
