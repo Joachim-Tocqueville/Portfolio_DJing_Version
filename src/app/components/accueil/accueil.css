@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Simonetta-Regular';
+    src: url(../../../fonts/Simonetta-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Simonetta-Italic';
+    src: url(../../../fonts/Simonetta-Italic.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Simonetta-Black';
+    src: url(../../../fonts/Simonetta-Black.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Simonetta-BlackItalic';
+    src: url(../../../fonts/Simonetta-BlackItalic.ttf) format("truetype");
+}

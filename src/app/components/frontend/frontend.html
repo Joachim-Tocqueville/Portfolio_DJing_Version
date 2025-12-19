@@ -6,19 +6,19 @@
       <section id="tab-section-projet1">
         <p class="text-[1.5rem] font-[Simonetta-Regular]">Tech my bro</p>
         <div class="mx-100 pt-5 text-[1.2rem] font-[Simonetta-Italic] absolute">
-          <p id="Contexte">
+          <p id="Contexte1">
             Voici un de mes projets personels, il consistait en la création d'une cover pour la musique "Tech my bro" de Spadrag.
             Pour cela, il fallu imaginer un design qui allait bien avec la DA de la musique ainsi que celle de l'artiste.
             J'avais tout de suite pensé à un design futuriste avec une tête de robot car c'est un son techno. Le choix des couleurs fut assez simple.
             Les polices ont été réfléchis juste après mais cette réflexion a pris un peu de temps. Et enfin j'ai cherché un fond sympa tout en restant dans la même DA.
           </p>
-          <p id="Logiciels/Langages">
+          <p id="Logiciels_Langages1">
             Ensuite, j'ai utilisé Photoshop pour assembler et modifier les différents éléments, notamment la tête de robot.
           </p>
-          <p id="Date">
+          <p id="Date1">
             Ce projet a débuté le 13/09/2026 et a duré 10 jours.
           </p>
-          <p id="Difficultes_rencontrees">
+          <p id="Difficultes_rencontrees1">
             Durant l'élaboration de cette cover, j'ai eu du mal à trouver la bonne tête, un bon fond et des polices qui correspondaient au thème.
             Le problème principal était que je prenais du temps à trouver des éléments qui étaient adaptés et intéressants.
             Enfin, j'ai partagé cette cover à Spadrag et il en était fier, tout comme moi.
@@ -31,19 +31,19 @@
       <section id="tab-section-projet2">
         <p class="text-[1.5rem] font-[Simonetta-Regular] mr-160">ACF2L</p>
         <div class="mx-100 ml-20 pr-80 pt-5 text-[1.2rem] font-[Simonetta-Italic] absolute">
-          <p id="Contexte">
+          <p id="Contexte2">
             Voici un de mes projets personels, il consistait en la création d'une cover pour la musique "Tech my bro" de Spadrag.
             Pour cela, il fallu imaginer un design qui allait bien avec la DA de la musique ainsi que celle de l'artiste.
             J'avais tout de suite pensé à un design futuriste avec une tête de robot car c'est un son techno. Le choix des couleurs fut assez simple.
             Les polices ont été réfléchis juste après mais cette réflexion a pris un peu de temps. Et enfin j'ai cherché un fond sympa tout en restant dans la même DA.
           </p>
-          <p id="Logiciels/Langages">
+          <p id="Logiciels_Langages2">
             Ensuite, j'ai utilisé Photoshop pour assembler et modifier les différents éléments, notamment la tête de robot.
           </p>
-          <p id="Date">
+          <p id="Date2">
             Ce projet a débuté le 13/09/2026 et a duré 10 jours.
           </p>
-          <p id="Difficultes_rencontrees">
+          <p id="Difficultes_rencontrees2">
             Durant l'élaboration de cette cover, j'ai eu du mal à trouver la bonne tête, un bon fond et des polices qui correspondaient au thème.
             Le problème principal était que je prenais du temps à trouver des éléments qui étaient adaptés et intéressants.
             Enfin, j'ai partagé cette cover à Spadrag et il en était fier, tout comme moi.
@@ -75,35 +75,37 @@
         </div>
         <!-- Bouton play/pause -->
         <div class="absolute ml-8 mt-65 z-1">
-          <svg class="fill-[#111111] h-20 absolute cursor-pointer">
+          <!-- Zone cliquable élargie (hit area) -->
+          <button id="hitPlayProjet1" (click)="changePlayPause($event)" aria-label="play-pause-projet1" class="absolute l-0 t-0 w-[64px] h-[64px] bg-transparent border-none p-0 z-3 cursor-pointer"></button>
+          <svg (click)="changePlayPause($event)" class="fill-[#111111] h-20 absolute cursor-pointer">
             <circle cx="40" cy="40" r="32.5"/>
-            <line (click)="switchToTab('projet1')" x1="28.7" y1="22.6" x2="28.7" y2="57.4" stroke="#51F076" stroke-width="7" id="line1projet1"/>
-            <line (click)="switchToTab('projet1')" x1="52.5" y1="22.6" x2="52.5" y2="57.4" stroke="#51F076" stroke-width="7" id="line2projet1"/>
+            <line x1="28.7" y1="22.6" x2="28.7" y2="57.4" stroke="#51F076" stroke-width="7" id="line1projet1" class="hidden"/>
+            <line x1="52.5" y1="22.6" x2="52.5" y2="57.4" stroke="#51F076" stroke-width="7" id="line2projet1" class="hidden"/>
           </svg>
           <button id="tab-btn-projet1" (click)="switchToTab('projet1')" type="button" class="cursor-pointer ml-8 mt-[1.4rem] border-t-18 border-t-transparent border-l-25 border-l-[#51F076] border-b-18 border-b-transparent absolute"></button>
         </div>
         <!-- Hot cues -->
         <div class="ml-9">
           <nav class="main-nav">
-            <a class="nav-link" href="#Contexte">
+            <a class="nav-link" href="#Contexte1">
               <svg class="mt-59 ml-[7.6rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="21" y="44" font-size="30" fill="white">C</text>
               </svg>
             </a>
-            <a class="nav-link" href="#Logiciels/Langages">
+            <a class="nav-link" href="#Logiciels_Langages1">
               <svg class="mt-59 ml-[11.8rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="25" y="43" font-size="30" fill="white">L</text>
               </svg>
             </a>
-            <a class="nav-link" href="#Date">
+            <a class="nav-link" href="#Date1">
               <svg class="mt-76 ml-[7.6rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="13.5" y="43" font-size="30" fill="white">Da</text>
               </svg>
             </a>
-            <a class="nav-link" href="#Difficultes_rencontrees">
+            <a class="nav-link" href="#Difficultes_rencontrees1">
               <svg class="mt-76 ml-[11.8rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="17" y="44" font-size="30" fill="white">Di</text>
@@ -145,36 +147,38 @@
         </svg>
       </div>
       <!-- Bouton play/pause -->
-      <div class="absolute ml-8 mt-65 z-1">
-        <svg class="fill-[#111111] h-20 absolute">
+      <div class="absolute ml-8 mt-65 z-1 cursor-pointer">
+        <!-- Zone cliquable élargie (hit area) -->
+        <button id="hitPlayProjet2" (click)="changePlayPause($event)" aria-label="play-pause-projet2" class="absolute l-0 t-0 w-[64px] h-[64px] bg-transparent border-none p-0 z-3 cursor-pointer"></button>
+        <svg (click)="changePlayPause($event)" class="fill-[#111111] h-20 absolute">
           <circle cx="40" cy="40" r="32.5"/>
-          <line (click)="switchToTab('projet2')" x1="28.7" y1="22.6" x2="28.7" y2="57.4" stroke="#51F076" stroke-width="7" id="line1projet2"/>
-          <line (click)="switchToTab('projet2')" x1="52.5" y1="22.6" x2="52.5" y2="57.4" stroke="#51F076" stroke-width="7" id="line2projet2"/>
+          <line x1="28.7" y1="22.6" x2="28.7" y2="57.4" stroke="#51F076" stroke-width="7" id="line1projet2" class="hidden"/>
+          <line x1="52.5" y1="22.6" x2="52.5" y2="57.4" stroke="#51F076" stroke-width="7" id="line2projet2" class="hidden"/>
         </svg>
         <button id="tab-btn-projet2" (click)="switchToTab('projet2')" type="button" class="cursor-pointer ml-8 mt-[1.4rem] border-t-18 border-t-transparent border-l-25 border-l-[#51F076] border-b-18 border-b-transparent absolute"></button>
       </div>
       <!-- Hot cues -->
         <div class="ml-9">
           <nav class="main-nav">
-            <a class="nav-link" href="#Contexte">
+            <a class="nav-link" href="#Contexte2">
               <svg class="mt-59 ml-[7.6rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="21" y="44" font-size="30" fill="white">C</text>
               </svg>
             </a>
-            <a class="nav-link" href="#Logiciels/Langages">
+            <a class="nav-link" href="#Logiciels_Langages2">
               <svg class="mt-59 ml-[11.8rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="25" y="43" font-size="30" fill="white">L</text>
               </svg>
             </a>
-            <a class="nav-link" href="#Date">
+            <a class="nav-link" href="#Date2">
               <svg class="mt-76 ml-[7.6rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="13.5" y="43" font-size="30" fill="white">Da</text>
               </svg>
             </a>
-            <a class="nav-link" href="#Difficultes_rencontrees">
+            <a class="nav-link" href="#Difficultes_rencontrees2">
               <svg class="mt-76 ml-[11.8rem] h-16 w-16 absolute">
                 <rect x="5" y="5" width="55" height="55" fill="#1A1A1A" stroke="#F99D43" stroke-width="2"/>
                 <text x="17" y="44" font-size="30" fill="white">Di</text>
