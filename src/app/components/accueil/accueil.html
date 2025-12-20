@@ -7,12 +7,24 @@
     <div class="flex">
         <app-menu></app-menu>
         <div>
-        <img src="" alt="Front-end" class="bg-[#717171] h-57.5 w-122 text-center text-white">
-        <img src="" alt="Design" class="bg-[#585858] h-57.5 w-122 text-center text-white">
+            <a routerLink="/app-frontend">
+                <span class="absolute z-1 mx-[11.1rem] my-[5.67rem] font-[Simonetta-Regular] text-white text-[2rem]">Front-end</span>
+                <img src="/imgs/ACF2L.webp" alt="Front-end" class="bg-black h-57.5 w-122 text-center text-white object-fill overflow-hidden content-center blur-xs">
+            </a>
+            <a routerLink="/app-design">
+                <span class="absolute z-1 mx-[12.38rem] my-[5.67rem] font-[Simonetta-Regular] text-white text-[2rem]">Design</span>
+                <img src="/imgs/Tech_my_bro.webp" alt="Design" class="bg-black h-57.5 w-122 text-center text-white object-contain overflow-hidden content-center blur-xs">
+            </a>
         </div>
         <div>
-        <img src="" alt="Back-end" class="bg-[#585858] h-57.5 w-122 text-center text-white">
-        <img src="" alt="À propos" class="bg-[#717171] h-57.5 w-122 text-center text-white">
+            <a routerLink="/app-backend">
+                <span class="absolute z-1 mx-[11.39rem] my-[5.67rem] font-[Simonetta-Regular] text-white text-[2rem]">Back-end</span>
+                <img src="" alt="Back-end" class="bg-black h-57.5 w-122 text-center text-white object-fill overflow-hidden content-center blur-xs">
+            </a>
+            <a routerLink="/app-apropos">
+                <span class="absolute z-1 mx-[11.6rem] my-[5.67rem] font-[Simonetta-Regular] text-white text-[2rem]">À propos</span>
+                <img src="" alt="À propos" class="bg-black h-57.5 w-122 text-center text-white object-contain overflow-hidden content-center blur-xs">
+            </a>
         </div>
         <app-formcontact></app-formcontact>
     </div>

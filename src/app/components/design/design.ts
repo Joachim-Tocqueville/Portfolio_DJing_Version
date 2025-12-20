@@ -210,13 +210,13 @@ export class Design {
       line1pauseprojet1.style.display = 'block';
       line2pauseprojet1.style.display = 'block';
       btnprojet1.style.display = 'none';
-      imgTechmybro.classList.add('rotating'); // Utiliser une classe
+      imgTechmybro.classList.add('rotating');
 
       // Projet 2 : mode "arrêt" (play visible, pause cachée, animation arrêtée)
       line1pauseprojet2.style.display = 'none';
       line2pauseprojet2.style.display = 'none';
       btnprojet2.style.display = 'block';
-      imgACF2L.classList.remove('rotating'); // Retirer la classe
+      imgACF2L.classList.remove('rotating');
 
       this.currentTab = 'projet1';
       console.log('Switched to projet1, animation lancée');
@@ -232,13 +232,13 @@ export class Design {
       line1pauseprojet2.style.display = 'block';
       line2pauseprojet2.style.display = 'block';
       btnprojet2.style.display = 'none';
-      imgACF2L.classList.add('rotating'); // Utiliser une classe
+      imgACF2L.classList.add('rotating');
 
       // Projet 1 : mode "arrêt" (play visible, pause cachée, animation arrêtée)
       line1pauseprojet1.style.display = 'none';
       line2pauseprojet1.style.display = 'none';
       btnprojet1.style.display = 'block';
-      imgTechmybro.classList.remove('rotating'); // Retirer la classe
+      imgTechmybro.classList.remove('rotating');
 
       this.currentTab = 'projet2';
       console.log('Switched to projet2, animation lancée');
@@ -254,13 +254,13 @@ export class Design {
       line1pauseprojet3.style.display = 'block';
       line2pauseprojet3.style.display = 'block';
       btnprojet3.style.display = 'none';
-      imgTechmybro.classList.add('rotating'); // Utiliser une classe
+      imgTechmybro.classList.add('rotating');
 
       // Projet 4 : mode "arrêt" (play visible, pause cachée, animation arrêtée)
       line1pauseprojet4.style.display = 'none';
       line2pauseprojet4.style.display = 'none';
       btnprojet4.style.display = 'block';
-      imgACF2L.classList.remove('rotating'); // Retirer la classe
+      imgACF2L.classList.remove('rotating');
 
       this.currentTab = 'projet3';
       console.log('Switched to projet3, animation lancée');
@@ -276,13 +276,13 @@ export class Design {
       line1pauseprojet4.style.display = 'block';
       line2pauseprojet4.style.display = 'block';
       btnprojet4.style.display = 'none';
-      imgACF2L.classList.add('rotating'); // Utiliser une classe
+      imgACF2L.classList.add('rotating');
 
       // Projet 3 : mode "arrêt" (play visible, pause cachée, animation arrêtée)
       line1pauseprojet3.style.display = 'none';
       line2pauseprojet3.style.display = 'none';
       btnprojet3.style.display = 'block';
-      imgTechmybro.classList.remove('rotating'); // Retirer la classe
+      imgTechmybro.classList.remove('rotating');
 
       this.currentTab = 'projet4';
       console.log('Switched to projet4, animation lancée');
@@ -595,14 +595,12 @@ export class Design {
     
     const fader = document.getElementById('fader_movible');
     if (!fader) return;
-    
-    fader.style.transition = '';
 
     const deltaX = event.clientX - this.faderStartX;
 
     const deltaRem = deltaX / 16;
-    
-    let newLeft = this.faderStartLeft + deltaX;
+
+    let newLeft = this.faderStartLeft + deltaRem;
     
     newLeft = Math.max(this.FADER_MIN, Math.min(this.FADER_MAX, newLeft));
     
@@ -618,28 +616,6 @@ export class Design {
     
     const fader = document.getElementById('fader_movible');
     if (!fader) return;
-    
-    // const currentLeft = parseFloat(getComputedStyle(fader).marginLeft) || 0;
-    // const midPoint = this.FADER_MAX / 2;
-
-    /* if (currentLeft < midPoint) {
-      fader.style.marginLeft = '-3.01rem';
-      this.changeProjets(0);
-    } else {
-      fader.style.marginLeft = `${this.FADER_MAX}rem`;
-      this.changeProjets(this.FADER_MAX);
-    } */
-
-    /* const snappedPosition = currentLeft < midPoint ? 0 : this.FADER_MAX;
-    
-    fader.style.transition = 'margin-left 0.2s ease-out';
-    fader.style.marginLeft = `${snappedPosition}rem`;
-    
-    this.changeProjets(snappedPosition);
-    
-    setTimeout(() => {
-      fader.style.transition = '';
-    }, 200); */
   }
 
   private changeProjets(faderPosition: number) {
