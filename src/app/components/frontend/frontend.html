@@ -50,13 +50,13 @@
             Cependant, nous avons tout de même réussi à relever le défi et nous avons rendu et partagé ce projet sur GitHub.
           </p>
         </div>
-        <img src="/imgs/ACF2L.webp" alt="Image de 'Tech my bro'" class="bg-[#D9D9D9] h-80 w-160 ml-215 mt-5 text-center text-[#818181] font-[Simonetta-Regular] content-center absolute">
+        <img src="/imgs/ACF2L.webp" alt="Image de 'ACF2L'" class="bg-[#D9D9D9] h-80 w-160 ml-215 mt-5 text-center text-[#818181] font-[Simonetta-Regular] content-center absolute">
       </section>
 
       <!-- Projet 3 -->
       <section id="tab-section-projet3">
-          <p class="text-[1.5rem] font-[Simonetta-Regular]">Tech my bro2</p>
-          <div class="mx-100 pt-5 text-[1.2rem] font-[Simonetta-Italic] absolute">
+          <p class="text-[1.5rem] font-[Simonetta-Regular] mr-160">Site touristique</p>
+          <div class="mx-100 ml-20 pr-80 pt-5 text-[1.2rem] font-[Simonetta-Italic] absolute">
             <p id="Contexte3">
               Voici un de mes projets personnels, il consistait en la création d'une pochette pour la musique "Tech my bro" de Spadrag.
               Pour cela, il a fallu imaginer un design qui allait bien avec la DA de la musique ainsi que celle de l'artiste.
@@ -78,12 +78,12 @@
               Enfin, j'ai partagé cette cover à Spadrag et il en était fier, tout comme moi.
             </p>
           </div>
-          <img src="/imgs/Tech_my_bro.webp" alt="Image de 'Tech my bro'" class="bg-[#D9D9D9] h-80 w-60 ml-300 mt-5 text-center text-[#818181] font-[Simonetta-Regular] content-center absolute">
+          <img src="/imgs/Site_touristique.webp" alt="Image de 'Site touristique'" class="bg-[#D9D9D9] h-80 w-160 ml-215 mt-5 text-center text-[#818181] font-[Simonetta-Regular] content-center absolute">
         </section>
   
         <!-- Projet 4 -->
         <section id="tab-section-projet4">
-          <p class="text-[1.5rem] font-[Simonetta-Regular] mr-160">ACF2L2</p>
+          <p class="text-[1.5rem] font-[Simonetta-Regular] mr-160">Webdoc</p>
           <div class="mx-100 ml-20 pr-80 pt-5 text-[1.2rem] font-[Simonetta-Italic] absolute">
             <p id="Contexte4">
               Ce projet universitaire consistait en la refonte du site web de l'aéroclub ACF2L.
@@ -101,7 +101,7 @@
               Cependant, nous avons tout de même réussi à relever le défi et nous avons rendu et partagé ce projet sur GitHub.
             </p>
           </div>
-          <img src="/imgs/ACF2L.webp" alt="Image de 'Tech my bro'" class="bg-[#D9D9D9] h-80 w-160 ml-215 mt-5 text-center text-[#818181] font-[Simonetta-Regular] content-center absolute">
+          <img [src]="imageURL" (mouseenter)="changeImage(true)" (mouseleave)="changeImage(false)" [alt]="imagealt" class="bg-[#D9D9D9] h-80 w-160 ml-215 mt-5 text-center text-[#818181] font-[Simonetta-Regular] content-center absolute">
         </section>
 
       <!--<div (mousedown)="startResize($event)" class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-4 bg-indigo-500 rounded-full cursor-ns-resize flex justify-center">
@@ -168,9 +168,9 @@
       </div>
       <!-- Projet 3 -->
       <div class="bg-[#292929] h-115 w-101 pt-5 text-center hidden" id="projet3">
-          <span class="text-[2rem] text-white font-[Simonetta-Regular] ml-9">Tech my bro2</span>
+          <span class="text-[2rem] text-white font-[Simonetta-Regular] ml-9">Site touristique</span>
           <!-- Jogwheel avec img projet 3-->
-          <img src="/imgs/Tech_my_bro.webp" alt="Image de 'Tech my bro'" id="imgTechmybro" class="bg-[#D9D9D9] h-24 w-24 rounded-full object-fill overflow-hidden block text-center text-[#818181] font-[Simonetta-Regular] mt-16.5 ml-43.5 content-center absolute z-2">
+          <img src="/imgs/Site_touristique.webp" alt="Image de 'Site touristique" id="imgSitetouristique" class="bg-[#D9D9D9] h-24 w-24 rounded-full object-fill overflow-hidden block text-center text-[#818181] font-[Simonetta-Regular] mt-16.5 ml-43.5 content-center absolute z-2">
           <div class="absolute ml-[7.6rem] mt-[0.8rem] z-1">
           <svg class="fill-[#2C2C2C] stroke-black stroke-4 h-48">
               <circle cx="100" cy="100" r="80"/>
@@ -243,7 +243,7 @@
       <div class="bg-[#292929] h-115 w-101 pt-5 text-center" id="projet2">
           <span class="text-[2rem] text-white font-[Simonetta-Regular] ml-9">ACF2L</span>
           <!-- Jogwheel avec img projet 2-->      
-          <img src="/imgs/ACF2L.webp" alt="Image de 'ACF2L'" id="imgACF2L" class="bg-[#D9D9D9] h-24 w-24 rounded-full object-cover object-right text-center text-[#818181] font-[Simonetta-Regular] mt-16.5 ml-43.5 content-center absolute z-2">
+          <img src="/imgs/ACF2L.webp" alt="Image de 'ACF2L'" id="imgACF2L" class="bg-[#D9D9D9] h-24 w-24 rounded-full object-fill object-right text-center text-[#818181] font-[Simonetta-Regular] mt-16.5 ml-43.5 content-center absolute z-2">
           <div class="absolute ml-[7.6rem] mt-[0.8rem] z-1">
           <svg class="fill-[#2C2C2C] stroke-black stroke-4 h-48">
               <circle cx="100" cy="100" r="80"/>
@@ -292,9 +292,9 @@
       </div>
       <!-- Projet 4 -->
       <div class="bg-[#292929] h-115 w-101 pt-5 text-center hidden" id="projet4">
-          <span class="text-[2rem] text-white font-[Simonetta-Regular] ml-9">ACF2L2</span>
+          <span class="text-[2rem] text-white font-[Simonetta-Regular] ml-9">Webdoc</span>
           <!-- Jogwheel avec img projet 4-->      
-          <img src="/imgs/ACF2L.webp" alt="Image de 'ACF2L'" id="imgACF2L" class="bg-[#D9D9D9] h-24 w-24 rounded-full object-cover object-right text-center text-[#818181] font-[Simonetta-Regular] mt-16.5 ml-43.5 content-center absolute z-2">
+          <img src="/imgs/Page_accueil_webdoc_sans_affiches.webp" alt="Image de 'Page d'accueil du webdoc sans les affiches'" id="imgWebdocsansaffiches" class="bg-[#D9D9D9] h-24 w-24 rounded-full object-fill object-right text-center text-[#818181] font-[Simonetta-Regular] mt-16.5 ml-43.5 content-center absolute z-2">
           <div class="absolute ml-[7.6rem] mt-[0.8rem] z-1">
           <svg class="fill-[#2C2C2C] stroke-black stroke-4 h-48">
               <circle cx="100" cy="100" r="80"/>

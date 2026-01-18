@@ -197,8 +197,10 @@ export class Frontend {
     const line2pauseprojet4 = document.getElementById('line2projet4');
     const imgTechmybro = document.getElementById('imgTechmybro');
     const imgACF2L = document.getElementById('imgACF2L');
+    const imgSitetouristique = document.getElementById('imgSitetouristique');
+    const imgWebdocsansaffiches = document.getElementById('imgWebdocsansaffiches');
 
-    if (!tabprojet1 || !tabprojet2 || !tabprojet3 || !tabprojet4 || !btnprojet1 || !btnprojet2 || !btnprojet3 || !btnprojet4 || !line1pauseprojet1 || !line2pauseprojet1 || !line1pauseprojet2 || !line2pauseprojet2 || !line1pauseprojet3 || !line2pauseprojet3 || !line1pauseprojet4 || !line2pauseprojet4 || !imgTechmybro || !imgACF2L) return;
+    if (!tabprojet1 || !tabprojet2 || !tabprojet3 || !tabprojet4 || !btnprojet1 || !btnprojet2 || !btnprojet3 || !btnprojet4 || !line1pauseprojet1 || !line2pauseprojet1 || !line1pauseprojet2 || !line2pauseprojet2 || !line1pauseprojet3 || !line2pauseprojet3 || !line1pauseprojet4 || !line2pauseprojet4 || !imgTechmybro || !imgACF2L || !imgSitetouristique || !imgWebdocsansaffiches) return;
 
     if (tabName === 'projet1') {
       tabprojet1.style.display = 'block';
@@ -254,13 +256,13 @@ export class Frontend {
       line1pauseprojet3.style.display = 'block';
       line2pauseprojet3.style.display = 'block';
       btnprojet3.style.display = 'none';
-      imgTechmybro.classList.add('rotating'); // Utiliser une classe
+      imgSitetouristique.classList.add('rotating'); // Utiliser une classe
 
       // Projet 4 : mode "arrêt" (play visible, pause cachée, animation arrêtée)
       line1pauseprojet4.style.display = 'none';
       line2pauseprojet4.style.display = 'none';
       btnprojet4.style.display = 'block';
-      imgACF2L.classList.remove('rotating'); // Retirer la classe
+      imgWebdocsansaffiches.classList.remove('rotating'); // Retirer la classe
 
       this.currentTab = 'projet3';
       console.log('Switched to projet3, animation lancée');
@@ -276,17 +278,25 @@ export class Frontend {
       line1pauseprojet4.style.display = 'block';
       line2pauseprojet4.style.display = 'block';
       btnprojet4.style.display = 'none';
-      imgACF2L.classList.add('rotating'); // Utiliser une classe
+      imgWebdocsansaffiches.classList.add('rotating'); // Utiliser une classe
 
       // Projet 3 : mode "arrêt" (play visible, pause cachée, animation arrêtée)
       line1pauseprojet3.style.display = 'none';
       line2pauseprojet3.style.display = 'none';
       btnprojet3.style.display = 'block';
-      imgTechmybro.classList.remove('rotating'); // Retirer la classe
+      imgSitetouristique.classList.remove('rotating'); // Retirer la classe
 
       this.currentTab = 'projet4';
       console.log('Switched to projet4, animation lancée');
     }
+  }
+
+  imageURL: string = '/imgs/Page_accueil_webdoc_sans_affiches.webp';
+  imagealt: string = "Image de 'Page d'accueil du webdoc sans les affiches'";
+
+  changeImage(isHovering: boolean): void {
+    this.imageURL = isHovering ? '/imgs/Page_accueil_webdoc_avec_affiches.webp' : '/imgs/Page_accueil_webdoc_sans_affiches.webp';
+    this.imagealt = isHovering ? "Image de 'Page d'accueil du webdoc avec les affiches'" : "Image de 'Page d'accueil du webdoc sans les affiches'"
   }
 
   changePlayPause(event: MouseEvent): void {
@@ -304,8 +314,8 @@ export class Frontend {
     const btn4 = document.getElementById('tab-btn-projet4');
     const img1 = document.getElementById('imgTechmybro') as HTMLElement;
     const img2 = document.getElementById('imgACF2L') as HTMLElement;
-    const img3 = document.getElementById('imgTechmybro') as HTMLElement;
-    const img4 = document.getElementById('imgACF2L') as HTMLElement;
+    const img3 = document.getElementById('imgSitetouristique') as HTMLElement;
+    const img4 = document.getElementById('imgWebdocsansaffiches') as HTMLElement;
     const tabprojet1 = document.getElementById('tab-section-projet1');
     const tabprojet2 = document.getElementById('tab-section-projet2');
     const tabprojet3 = document.getElementById('tab-section-projet3');
